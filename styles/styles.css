@@ -12,12 +12,12 @@
 
  :root {
   /* colors */
-  --color-yellow: #ffea00;
+  --color-yellow: #eeeeee;
   --link-color: black;
   --link-hover-color: black;
-  --background-color: #fff;
+  --background-color: #ccc;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ffc719;
+  --highlight-background-color: #999999;
   --text-color: #202020;
   --text-color-light: #ebebeb;
   --heading-highlight-color: #ffea00;
@@ -25,11 +25,9 @@
   --highlight-text-color: var(--text-color);
 
   /* fonts */
-  /* --body-font-family: 'Source Sans Pro', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: asar, georgia, 'Times New Roman', times, serif;
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace; */
-  --body-font-family: adobe-clean-light, 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: adobe-clean-regular, 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: 'Source Sans Pro', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --heading-font-family: 'Arapey', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  /* --heading-font-family: asar, georgia, 'Times New Roman', times, serif; */
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -200,23 +198,11 @@ a.button.secondary, button.secondary {
 
 body.activity main {
   display: grid;
-  grid-template-columns: auto min(25%,300px) min(75%,900px) auto;
+  grid-template-columns: 25% 75%;
   grid-template-areas:
-    "bread bread bread bread"
-    "hero hero hero hero"
-    "padleft left main padright";
-}
-
-body.activity main .section {
-  grid-area: main;
-}
-
-body.activity main .section:first-child {
-  grid-area: hero;
-}
-
-body.activity main .section:nth-child(2) {
-  grid-area: left;
+    "bread bread"
+    "hero hero"
+    "left main";
 }
 
 main input {
@@ -237,11 +223,9 @@ main input:hover {
   border: 1px solid var(--text-color);
 }
 
-/* stylelint-disable no-descending-specificity */
 main .section {
   padding: 64px 16px;
 }
-/* stylelint-enable no-descending-specificity */
 
 main pre {
   background-color: var(--overlay-background-color);
@@ -355,28 +339,4 @@ main .section[data-section-status='initialized'] {
 
 .cc-btn.cc-save {
   padding: 13px 29px;
-}
-
-.section.blockquote-container {
-  background: white;
-}
-
-
-.section.article-content-fragment-container {
-  background: white;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/* Experimentation Widget Styling */
-.hlx-preview-overlay .hlx-badge {
-  padding: 1rem 2rem;
-  font-size: 18px;
-  line-height: normal;
-}
-
-.hlx-preview-overlay .hlx-badge .hlx-popup * {
-  font-size: 14px;
 }
