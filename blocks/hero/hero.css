@@ -40,6 +40,6 @@ main .hero img {
     height: 100%;
 }
 
-.hero [data-align="center"] {
+.hero [data-align="top"] {
     text-align: center;
 }
