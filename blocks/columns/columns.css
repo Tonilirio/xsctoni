@@ -21,7 +21,7 @@
 
     .columns > div > div {
         flex: 1;
-        margin-left: 2px;
+        margin-left: 32px;
     }
 
     .columns > div > div:first-of-type {
