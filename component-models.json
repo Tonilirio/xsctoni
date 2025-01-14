@@ -134,6 +134,11 @@
     "fields": [
       {
         "component": "text",
+        "name": "name",
+        "label": "Section Name"
+      },
+      {
+        "component": "text",
         "name": "style",
         "value": "",
         "label": "Style",
